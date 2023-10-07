@@ -26,7 +26,7 @@ class Cell{
             System.out.println("|" + player.getSymbol().getSymbolChar()+ "|");
         }
     }
-    
+
     public int getRow() {
         return row;
     }
