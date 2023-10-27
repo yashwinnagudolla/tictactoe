@@ -1,6 +1,7 @@
 package tictactoe.models;
 
 import java.util.ArrayList;
+import java.util.List;
 
 class Board{
     private int size;
