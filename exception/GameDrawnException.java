@@ -1,4 +1,4 @@
-package projects.tictactoe.exception;
+package tictactoe.exception;
 
 public class GameDrawnException extends RuntimeException{
     public GameDrawnException(String message) {

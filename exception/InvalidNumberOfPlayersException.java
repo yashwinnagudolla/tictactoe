@@ -1,4 +1,4 @@
-package projects.tictactoe.exception;
+package tictactoe.exception;
 
 public class InvalidNumberOfPlayersException extends RuntimeException{
     public InvalidNumberOfPlayersException(String message) {
