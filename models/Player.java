@@ -8,7 +8,7 @@ import tictactoe.models.Cell;
 import tictactoe.models.CellState;
 import java.util.*;
 
-class Player{
+public class Player{
     private String name;
     private static int idCounter = 0;
     private int id;

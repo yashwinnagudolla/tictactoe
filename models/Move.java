@@ -1,6 +1,6 @@
 package tictactoe.models;
 
-class Move{
+public class Move{
     private Cell cell;
     private Player player;
 
