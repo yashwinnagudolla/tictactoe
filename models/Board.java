@@ -2,18 +2,17 @@ package tictactoe.models;
 
 import java.util.ArrayList;
 import java.util.List;
-import tictactoe.models.Cell;
 
 class Board{
     private int size;
     private List<List<Cell>> board;
 
-    public board(int size){
+    public Board(int size){
         this.size = size;
         this.board = new ArrayList<>();
 
         for(int i = 0;i < size;i++){
-            this.getBoard().add(new ArrayList<>());
+            this.getBoard().add(new ArrayList<Cell>());
             for(int j = 0;j < size;j++){
                 this.getBoard().get(i).add(new Cell(i,j));
             }

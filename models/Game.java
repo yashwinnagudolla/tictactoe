@@ -9,6 +9,11 @@ import tictactoe.strategies.winningStrategy.WinningStrategy;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import tictactoe.models.Player;
+import tictactoe.models.Board;
+import tictactoe.models.Move;
+import tictactoe.models.GameState;
+import tictactoe.strategies.WinningStrategy;
 
 public class Game {
   private List<Player> players;
@@ -18,13 +23,14 @@ public class Game {
   private GameState gameState;
   private List<WinningStrategy> winningStrategies;
 
-  private Game(List<Player> players, Board board, List<WinningStrategy> winningStrategies) {
+  private Game(List<Player> players, Board board, List<WinningStrategy> winningStrategies){
     this.players = players;
     this.board = board;
-    this.moves = new ArrayList<Move>();
-    this.gameState = GameState.IN_PROGRESS;
     this.winningStrategies = winningStrategies;
+    this.gameState = GameState.IN_PROGRESS;
+    this.moves = new ArrayList<Move>();
   }
+
 
   public List<Player> getPlayers() {
     return players;
@@ -52,8 +58,8 @@ public class Game {
 
   public static Builder builder(){
     return new Builder();
-  }
 
+  }
   public static class Builder{
     private List<Player> players;
     private List<WinningStrategy> winningStrategies;
