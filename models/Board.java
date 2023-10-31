@@ -2,6 +2,7 @@ package tictactoe.models;
 
 import java.util.ArrayList;
 import java.util.List;
+import tictactoe.models.Cell;
 
 class Board{
     private int size;
