@@ -11,7 +11,7 @@ class Cell{
         this.col = col;
     }
 
-    public Cell(int row,int col,Player player){
+    public Cell(int row, int col, Player player){
         this.row = row;
         this.col = col;
         this.player = player;
@@ -20,7 +20,7 @@ class Cell{
     public void display(){
         if(player == null){
             System.out.println("| |");
-        }else if(cellState.equals(cellState.BLOCKED)){
+        }else if(this.cellState.equals(cellState.BLOCKED)){
             System.out.println("||||");
         }else{
             System.out.println("|" + player.getSymbol().getSymbolChar()+ "|");

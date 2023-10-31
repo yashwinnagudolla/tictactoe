@@ -1,6 +1,6 @@
 package tictactoe.models;
 
 public enum CellState{
-    EMPTY,FILLED,BLOCKED;
+    FILLED,EMPTY,BLOCKED;
 
 }

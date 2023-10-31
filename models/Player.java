@@ -31,6 +31,7 @@ class Player{
         int col = scanner.nextInt();
         board.getBoard().get(row).get(col).setPlayer(this);
         board.getBoard().get(row).get(col).setCellState(CellState.FILLED);
+        Cell neeCell = new Cell()
         return new Move(new Cell(row,col,this),this);
     }
 

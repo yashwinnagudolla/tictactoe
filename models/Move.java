@@ -2,7 +2,7 @@ package tictactoe.models;
 
 class Move{
     private Cell cell;
-    private Player palyer;
+    private Player player;
 
     public Move(Cell cell,Player player){
         this.cell = cell;
@@ -18,10 +18,10 @@ class Move{
     }
 
     public Player getPalyer() {
-        return palyer;
+        return player;
     }
 
     public void setPalyer(Player palyer) {
-        this.palyer = palyer;
+        this.player = palyer;
     }
 }
