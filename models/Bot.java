@@ -1,5 +1,6 @@
 package tictactoe.models;
 
+import strategies.botPlayingStrategy.BotPlayingStrategy;
 import tictactoe.models.Player;
 import tictactoe.models.BotDifficultyLevel;
 import tictactoe.strategies.botPlayingStrategy.BotPlayingStrategy;

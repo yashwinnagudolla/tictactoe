@@ -23,7 +23,9 @@ public class Move{
     public tictactoe.models.Player getPalyer() {
         return player;
     }
-
+    public void setPlayer(Player player){
+        this.player = player;
+    }
     public void setPalyer(tictactoe.models.Player palyer) {
         this.player = palyer;
     }
