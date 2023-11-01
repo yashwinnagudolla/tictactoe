@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import tictactoe.models.Player;
+import tictactoe.models.PlayerType;
 import tictactoe.models.Board;
 import tictactoe.models.Move;
 import tictactoe.models.GameState;
@@ -97,7 +98,7 @@ public class Game {
     private void validateBotCounts(){
       int botCount = 0;
       for(Player player : players){
-        if(player.getPlayerType().equals(PlayerType.BOT)){
+        if(player.getPlayerType().equals(tictactoe.models.PlayerType.BOT)){
           botCount++;
         }
       }

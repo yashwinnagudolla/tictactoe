@@ -1,29 +1,30 @@
 package tictactoe.models;
 
 import tictactoe.models.Player;
+import tictactoe.models.BotDifficultyLevel;
 import tictactoe.strategies.botPlayingStrategy.BotPlayingStrategy;
 
 public class Bot extends Player{
-    private BotDifficultyLevel botDifficultyLevel;
+    private tictactoe.models.BotDifficultyLevel botDifficultyLevel;
     private BotPlayingStrategy botPlayingStrategy;
 
-    public Bot(Symbol symbol, String name, BotDifficultyLevel botDifficultyLevel, BotPlayingStrategy botPlayingStrategy) {
-        super(symbol, name, PlayerType.BOT);
+    public Bot(tictactoe.models.Symbol symbol, String name, tictactoe.models.BotDifficultyLevel botDifficultyLevel, BotPlayingStrategy botPlayingStrategy) {
+        super(symbol, name, tictactoe.models.PlayerType.BOT);
         this.botDifficultyLevel = botDifficultyLevel;
         this.botPlayingStrategy = botPlayingStrategy;
     }
 
-    public Move makeMove(Board board){
-        Move move = botPlayingStrategy.makeMove(this,board); // move cell
+    public tictactoe.models.Move makeMove(tictactoe.models.Board board){
+        tictactoe.models.Move move = botPlayingStrategy.makeMove(this,board); // move cell
         move.setPlayer(this); // move player
         return move;
     }
 
-    public BotDifficultyLevel getBotDifficultyLevel() {
+    public tictactoe.models.BotDifficultyLevel getBotDifficultyLevel() {
         return botDifficultyLevel;
     }
 
-    public void setBotDifficultyLevel(BotDifficultyLevel botDifficultyLevel) {
+    public void setBotDifficultyLevel(tictactoe.models.BotDifficultyLevel botDifficultyLevel) {
         this.botDifficultyLevel = botDifficultyLevel;
     }
 

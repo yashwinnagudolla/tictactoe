@@ -1,20 +1,21 @@
 package tictactoe.models;
+import tictactoe.models.Cell;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Board{
     private int size;
-    private List<List<Cell>> board;
+    private List<List<tictactoe.models.Cell>> board;
 
     public Board(int size){
         this.size = size;
         this.board = new ArrayList<>();
 
         for(int i = 0;i < size;i++){
-            this.getBoard().add(new ArrayList<Cell>());
+            this.getBoard().add(new ArrayList<tictactoe.models.Cell>());
             for(int j = 0;j < size;j++){
-                this.getBoard().get(i).add(new Cell(i,j));
+                this.getBoard().get(i).add(new tictactoe.models.Cell(i,j));
             }
         }
     }
@@ -28,11 +29,11 @@ public class Board{
         }
     }
 
-    public List<List<Cell>> getBoard(){
+    public List<List<tictactoe.models.Cell>> getBoard(){
         return board;
     }
 
-    public void setBoard(List<List<Cell>> board){
+    public void setBoard(List<List<tictactoe.models.Cell>> board){
         this.board = board;
     }
     public int getSize() {

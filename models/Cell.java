@@ -1,5 +1,7 @@
 package tictactoe.models;
 
+import tictactoe.models.Player;
+import tictactoe.models.CellState;
 class Cell{
     private int row;
     private int col;
@@ -11,7 +13,7 @@ class Cell{
         this.col = col;
     }
 
-    public Cell(int row, int col, Player player){
+    public Cell(int row, int col, tictactoe.models.Player player){
         this.row = row;
         this.col = col;
         this.player = player;
@@ -43,19 +45,19 @@ class Cell{
         this.col = col;
     }
 
-    public Player getPlayer() {
+    public tictactoe.models.Player getPlayer() {
         return player;
     }
 
-    public void setPlayer(Player player) {
+    public void setPlayer(tictactoe.models.Player player) {
         this.player = player;
     }
 
-    public CellState getCellState() {
+    public tictactoe.models.CellState getCellState() {
         return cellState;
     }
 
-    public void setCellState(CellState cellState) {
+    public void setCellState(tictactoe.models.CellState cellState) {
         this.cellState = cellState;
     }
 }
