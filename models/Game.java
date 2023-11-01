@@ -1,5 +1,6 @@
 package tictactoe.models;
 
+import projects.tictactoe.exception.InvalidBotCountException;
 import tictactoe.exception.DuplicateSymbolException;
 import tictactoe.exception.InvalidBotCountException;
 import tictactoe.exception.InvalidDimensionException;
