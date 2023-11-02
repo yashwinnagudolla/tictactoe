@@ -6,7 +6,7 @@ import tictactoe.models.BotDifficultyLevel;
 import tictactoe.strategies.botPlayingStrategy.BotPlayingStrategy;
 
 public class Bot extends Player{
-    private tictactoe.models.BotDifficultyLevel botDifficultyLevel;
+    private BotDifficultyLevel botDifficultyLevel;
     private BotPlayingStrategy botPlayingStrategy;
 
     public Bot(tictactoe.models.Symbol symbol, String name, tictactoe.models.BotDifficultyLevel botDifficultyLevel, BotPlayingStrategy botPlayingStrategy) {
