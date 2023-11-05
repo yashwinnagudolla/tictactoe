@@ -1,14 +1,13 @@
 package tictactoe.strategies.botPlayingStrategy;
 
 import strategies.botPlayingStrategy.BotPlayingStrategy;
-import tictacetoe.models.Player;
 import tictactoe.models.Cell;
 import tictactoe.models.CellState;
 import tictactoe.models.Move;
 
 public class RandomBotPlayingStrategy implements BotPlayingStrategy {
     @Override
-    public Move makeMove(Player player, tictactoe.models.Board board){
+    public Move makeMove(tictactoe.models.Player player, tictactoe.models.Board board){
         for(int i = 0;i < board.getSize();i++){
             for(int j = 0;j < board.getSize();j++){
                 if(board.getBoard().get(i).get(j).getCellState().equals(CellState.EMPTY)){

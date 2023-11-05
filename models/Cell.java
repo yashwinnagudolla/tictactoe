@@ -2,7 +2,7 @@ package tictactoe.models;
 
 import tictactoe.models.Player;
 import tictactoe.models.CellState;
-class Cell{
+public class Cell{
     private int row;
     private int col;
     private Player player;
