@@ -1,4 +1,4 @@
-package tictactoe.strategies.winningStrategy;
+package strategies.winningStrategy;
 
 import tictactoe.models.Player;
 import tictactoe.models.Board;

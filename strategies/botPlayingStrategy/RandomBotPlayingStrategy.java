@@ -1,4 +1,4 @@
-package tictactoe.strategies.botPlayingStrategy;
+package strategies.botPlayingStrategy;
 
 import strategies.botPlayingStrategy.BotPlayingStrategy;
 import tictactoe.models.Cell;

@@ -24,6 +24,10 @@ public class Player{
         this.scanner = new Scanner(System.in);
     }
 
+    public Player() {
+
+    }
+
     public Move makeMove(Board board){
         System.out.println(this.getName() + " Please enter the row for the move");
         int row = scanner.nextInt();
