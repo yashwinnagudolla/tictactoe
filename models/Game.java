@@ -1,6 +1,6 @@
 package tictactoe.models;
 
-import projects.tictactoe.exception.InvalidBotCountException;
+import tictactoe.exception.InvalidBotCountException;
 import tictactoe.exception.DuplicateSymbolException;
 import tictactoe.exception.InvalidBotCountException;
 import tictactoe.exception.InvalidDimensionException;
@@ -15,7 +15,6 @@ import tictactoe.models.PlayerType;
 import tictactoe.models.Board;
 import tictactoe.models.Move;
 import tictactoe.models.GameState;
-import tictactoe.strategies.WinningStrategy;
 
 public class Game {
   private List<Player> players;
